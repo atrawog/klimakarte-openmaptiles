@@ -2,9 +2,10 @@ CREATE OR REPLACE FUNCTION poi_class_rank(class text)
     RETURNS int AS
 $$
 SELECT CASE class
-           WHEN 'hospital' THEN 20
-           WHEN 'railway' THEN 40
-           WHEN 'bus' THEN 50
+
+           WHEN 'railway' THEN 10
+           WHEN 'bus' THEN 20
+           WHEN 'hospital' THEN 50
            WHEN 'attraction' THEN 70
            WHEN 'harbor' THEN 75
            WHEN 'college' THEN 80
